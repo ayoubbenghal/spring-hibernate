@@ -8,13 +8,17 @@ import org.springframework.context.support.AbstractApplicationContext;
 
 import fr.dta.springhibernate.App;
 
+
 /**
  * @author Ayoub Benghal
  * 
- * 
+ * ayoub.benghal@gmail.com
  *
  *
  * 2017
+ * 
+ * Recuperation d'une instance unique de {@link AbstractApplicationContext} puisqu'elle est utilisée
+ * par plusieurs tests
  *
  *
  * AppTest.java

@@ -12,13 +12,17 @@ import org.springframework.transaction.annotation.Transactional;
 import fr.dta.springhibernate.company.model.Company;
 import fr.dta.springhibernate.dao.SpringHibernateDao;
 
+
 /**
  * @author Ayoub Benghal
  * 
- * 
+ * ayoub.benghal@gmail.com
  *
  *
  * 2017
+ * 
+ * Repository pour les requétes vers la Base de donnés
+ * Herite de {@link SpringHibernateDao} pour les requétes de base et pour la connection
  *
  *
  * CompanyJpaRepository.java

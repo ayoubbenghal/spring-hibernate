@@ -9,18 +9,22 @@ import javax.persistence.PersistenceContext;
 import org.hibernate.Session;
 import org.springframework.stereotype.Repository;
 
+
+
 /**
  * @author Ayoub Benghal
  * 
- * 
+ * ayoub.benghal@gmail.com
  *
  *
  * 2017
  *
  *
+ * Repository Hibernate pour les fonctions de bases (La session , l'ajout(persist) , 
+ * 										la modification(merge) , la suppression (delete)
+ *
  * SpringHibernateDao.java
  */
-
 @Repository
 public class SpringHibernateDao {
 	

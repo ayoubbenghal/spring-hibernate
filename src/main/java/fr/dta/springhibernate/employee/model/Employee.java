@@ -18,14 +18,17 @@ import javax.persistence.Table;
 import fr.dta.springhibernate.account.model.Account;
 import fr.dta.springhibernate.company.model.Company;
 
+
 /**
  * @author Ayoub Benghal
  * 
- * 
+ * ayoub.benghal@gmail.com
  *
  *
  * 2017
  *
+ *
+ * Entité pour la table employee de la base de données ( Modéle de données )
  *
  * Employee.java
  */

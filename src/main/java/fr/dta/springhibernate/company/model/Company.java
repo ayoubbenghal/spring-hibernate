@@ -15,13 +15,16 @@ import javax.persistence.Table;
 
 import fr.dta.springhibernate.employee.model.Employee;
 
+
 /**
  * @author Ayoub Benghal
  * 
- * 
+ * ayoub.benghal@gmail.com
  *
  *
  * 2017
+ * 
+ * Entité pour la création de la table company ( Modéle de données )
  *
  *
  * Company.java
@@ -34,6 +37,8 @@ public class Company {
 	/**
 	 *Company.java
 	 * id
+	 * 
+	 * L'id est genéré automatiquement avec une sequence 
 	 */
 	@Id
 	@GeneratedValue(generator="seq_company")
@@ -47,6 +52,8 @@ public class Company {
 	/**
 	 *Company.java
 	 * employees
+	 * 
+	 * Une société peut avoir plusieurs employés est c'est l'employé qui porte la relation
 	 */
 	@OneToMany(mappedBy="societe")
 	private List<Employee> employees;
@@ -61,12 +68,21 @@ public class Company {
 		super();
 		this.nom = nom;
 	}
+	/**
+	 * Constructor With : 
+	 * @param id
+	 * @param nom
+	 * @param employees
+	 */
 	public Company(Long id, String nom, List<Employee> employees) {
 		super();
 		this.id = id;
 		this.nom = nom;
 		this.employees = employees;
 	}
+	/**
+	 * Constructor With : 
+	 */
 	public Company() {
 		super();
 	}

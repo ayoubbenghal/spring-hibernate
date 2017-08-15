@@ -16,14 +16,17 @@ import fr.dta.springhibernate.employee.model.Employee;
 import fr.dta.springhibernate.employee.service.EmployeeService;
 import fr.dta.sprinhibernate.AppTest;
 
+
 /**
  * @author Ayoub Benghal
  * 
- * 
+ * ayoub.benghal@gmail.com
  *
  *
  * 2017
  *
+ *
+ * Tests dans la base de données pour l'objet {@link Employee}
  *
  * EmployeeTest.java
  */

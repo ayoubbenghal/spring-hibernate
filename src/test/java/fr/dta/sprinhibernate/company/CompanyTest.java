@@ -15,13 +15,17 @@ import fr.dta.springhibernate.company.model.Company;
 import fr.dta.springhibernate.company.service.CompanyService;
 import fr.dta.sprinhibernate.AppTest;
 
+
 /**
  * @author Ayoub Benghal
  * 
- * 
+ * ayoub.benghal@gmail.com
  *
  *
  * 2017
+ * 
+ * 
+ * Tests à la base de données pour l'objet {@link Company}
  *
  *
  * CompanyTest.java

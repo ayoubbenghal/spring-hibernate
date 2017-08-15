@@ -15,13 +15,18 @@ import fr.dta.sprinhibernate.mapping.UpdateMappingTest;
 /**
  * @author Ayoub Benghal
  * 
+ * ayoub.benghal@gmail.com
+ *
+ *
+ * mvn -Dtest=AllTests test pour un Single Test Run
  * 
- *
- *
+ * Teste Directement dans la base de données 
+ * 
+ * Le classement des tests est important pour ne pas violer les contraintes des clés étrangéres
+ * 
+ * 
+ * 
  * 2017
- *
- *
- * AllTests.java
  */
 @RunWith(Suite.class)
 @SuiteClasses({EmployeeTest.class,AccountTest.class,CompanyTest.class,UpdateMappingTest.class})

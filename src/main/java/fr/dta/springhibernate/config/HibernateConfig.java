@@ -21,18 +21,21 @@ import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
+
+
 /**
  * @author Ayoub Benghal
  * 
- * 
+ * ayoub.benghal@gmail.com
  *
  *
  * 2017
  *
  *
+ * La configuration hibernate pour les propriétés de la base de données et de l'application
+ *
  * HibernateConfig.java
  */
-
 @Configuration
 @EnableTransactionManagement
 @PropertySource("classpath:application.properties")

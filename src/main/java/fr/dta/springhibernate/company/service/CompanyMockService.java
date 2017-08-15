@@ -12,22 +12,32 @@ import org.springframework.transaction.annotation.Transactional;
 import fr.dta.springhibernate.company.model.Company;
 import fr.dta.springhibernate.company.repository.CompanyRepository;
 
+
+
 /**
  * @author Ayoub Benghal
  * 
- * 
+ * ayoub.benghal@gmail.com
  *
  *
  * 2017
  *
  *
+ * Service pour les méthodes de la société
+ *
  * CompanyMockService.java
  */
-
 @Service
 @Transactional
 public class CompanyMockService implements CompanyService{
 	
+	/**
+	 *CompanyMockService.java
+	 * companyRepository
+	 * 
+	 * Injection du bean {@link CompanyRepository} par attribut
+	 * 
+	 */
 	@Autowired
 	private CompanyRepository companyRepository;
 

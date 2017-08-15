@@ -12,13 +12,19 @@ import org.springframework.transaction.annotation.Transactional;
 import fr.dta.springhibernate.employee.model.Employee;
 import fr.dta.springhibernate.employee.repository.EmployeeRepository;
 
+
 /**
  * @author Ayoub Benghal
  * 
- * 
+ * ayoub.benghal@gmail.com
  *
  *
  * 2017
+ *
+ *
+ * Service pour les fonctions de l'employee
+ * 
+ * Un rollback pour les exception de type {@link RuntimeException}
  *
  *
  * EmployeeMockService.java
@@ -27,6 +33,12 @@ import fr.dta.springhibernate.employee.repository.EmployeeRepository;
 @Transactional(rollbackFor= {RuntimeException.class})
 public class EmployeeMockService implements EmployeeService{
 	
+	/**
+	 *EmployeeMockService.java
+	 * employeeRepository
+	 * 
+	 * Injection du bean {@link EmployeeRepository} par attribut
+	 */
 	@Autowired
 	private EmployeeRepository employeeRepository;
 

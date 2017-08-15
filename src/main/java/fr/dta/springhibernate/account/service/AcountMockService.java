@@ -14,20 +14,29 @@ import org.springframework.transaction.annotation.Transactional;
 import fr.dta.springhibernate.account.model.Account;
 import fr.dta.springhibernate.account.repository.AccountRepository;
 
+
 /**
  * @author Ayoub Benghal
  * 
- * 
+ * ayoub.benghal@gmail.com
  *
  *
  * 2017
  *
+ *
+ * Service pour les méthodes du Compte
  *
  * AcountMockService.java
  */
 @Service
 @Transactional
 public class AcountMockService implements AccountService{
+	/**
+	 *AcountMockService.java
+	 * accountRepository
+	 * 
+	 * Injection du Bean @see {@link AccountRepository} par attribut
+	 */
 	@Autowired
 	private AccountRepository accountRepository;
 

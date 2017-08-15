@@ -15,16 +15,19 @@ import fr.dta.sprinhibernate.AppTest;
  * 
  */
 
+
 /**
  * @author Ayoub Benghal
  * 
- * 
+ * ayoub.benghal@gmail.com
  *
  *
  * 2017
+ * 
+ * Tests à la base de donnés pour l'objet {@link Account}
  *
  *
- * TestHibernate.java
+ * AccountTest.java
  */
 public class AccountTest extends AppTest{
 

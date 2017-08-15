@@ -11,13 +11,16 @@ import javax.persistence.Table;
 
 import fr.dta.springhibernate.employee.model.Employee;
 
+
 /**
  * @author Ayoub Benghal
  * 
- * 
+ * ayoub.benghal@gmail.com
  *
  *
  * 2017
+ * 
+ * L'entité Compte dans la Base de données ( Modéle de données )
  *
  *
  * Account.java
@@ -26,10 +29,28 @@ import fr.dta.springhibernate.employee.model.Employee;
 @Table(name="account")
 
 public class Account {
+	/**
+	 *Account.java
+	 * userName
+	 * 
+	 * Le userName est la clé primaire de la table Account
+	 */
 	@Id
 	private String userName;
+	/**
+	 *Account.java
+	 * password
+	 * 
+	 * 
+	 */
 	@Column
 	private String password;
+	/**
+	 *Account.java
+	 * employee
+	 * 
+	 * La Table Employé porte la relation avec l'attribut compte
+	 */
 	@OneToOne(mappedBy="compte")
 	private Employee employee;
 	
@@ -42,7 +63,7 @@ public class Account {
 	
 	
 	/**
-	 * Constructor With : 
+	 * Constructor With : 0 parameters
 	 */
 	public Account() {
 		super();
